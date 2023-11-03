@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./Project/assets/logo.png" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main container -->
+    <div id="main-container">
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <!-- Sidebar Navigation Bar -->
+        <ul id="nav">
+          <li class="nav-option" style="opacity: 1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#" style="opacity: 1">Home</a>
+          </li>
+          <li class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </li>
+        </ul>
+
+        <!-- Sidebar Library -->
+        <div id="library">
+          <div id="options">
+            <div id="lib-option">
+              <img src="./Project/assets/library_icon.png" />
+              <a href="#">Your Library</a>
+            </div>
+            <div id="lib-icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- Library Boxes -->
+          <div id="lib-boxes">
+            <div class="lib-box">
+              <p class="lib-p1">Create your first playlist</p>
+              <p class="lib-p2">It's easy, we'll help you</p>
+              <button class="lib-btn">Create playlist</button>
+            </div>
+
+            <div class="lib-box">
+              <p class="lib-p1">Let's find some podcasts to follow</p>
+              <p class="lib-p2">We'll keep you updated on new episodes</p>
+              <button class="lib-btn">Browse podcasts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main content -->
+      <div id="main-content">
+        <!-- Sticky Navigation Bar -->
+        <div id="sticky-nav">
+          <div id="sticky-nav-icons">
+            <img src="./Project/assets/backward_icon.png" class="icon" />
+            <img src="./Project/assets/forward_icon.png" class="icon hide" />
+          </div>
+          <div id="sticky-nav-options">
+            <button class="sticky-nav-btn hide">Explore Premium</button>
+            <button class="sticky-nav-btn download-btn">
+              <i class="fa-regular fa-circle-down download-icon"></i>Install App
+            </button>
+            <i class="fa-regular fa-bell icon"></i>
+            <i class="fa-regular fa-user icon" style="margin-right: -2rem"></i>
+          </div>
+        </div>
+
+        <!-- Cards container -->
+        <div class="cards-container">
+          <div class="cards-heading">
+            <h2>Trending now</h2>
+            <span>Show all</span>
+          </div>
+          <div class="cards-box">
+            <div class="card">
+              <img src="./Project/assets/card2img.jpeg" class="card-image" />
+              <p class="card-title">Mahiye jinna S...</p>
+              <p class="card-info">Darshan Raval</p>
+            </div>
+            <div class="card">
+              <img src="./Project/assets/card3img.jpeg" class="card-image" />
+              <p class="card-title">Mere Paas Tum...</p>
+              <p class="card-info">Nusrat Fateh Ali Khan</p>
+            </div>
+            <div class="card">
+              <img src="./Project/assets/card4img.jpeg" class="card-image" />
+              <p class="card-title">Naa Ready (Fro...</p>
+              <p class="card-info">Annirudh Ravichander</p>
+            </div>
+            <div class="card">
+              <img src="./Project/assets/card2img.jpeg" class="card-image" />
+              <p class="card-title">Mahiye jinna S...</p>
+              <p class="card-info">Darshan Raval</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cards container -->
+        <div class="cards-container">
+          <div class="cards-heading">
+            <h2>Featured charts</h2>
+            <span>Show all</span>
+          </div>
+          <div class="cards-box">
+            <div class="card">
+              <img src="./Project/assets/card1img.jpeg" class="card-image" />
+              <p class="card-title">Top 50 - Global</p>
+              <p class="card-info">Your daily updates of the most played...</p>
+            </div>
+            <div class="card">
+              <img src="./Project/assets/card5img.jpeg" class="card-image" />
+              <p class="card-title">Top 50 - Global</p>
+              <p class="card-info">Your daily updates of the most played...</p>
+            </div>
+            <div class="card">
+              <img src="./Project/assets/card6img.jpeg" class="card-image" />
+              <p class="card-title">Top 50 - Global</p>
+              <p class="card-info">Your daily updates of the most played...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Credits -->
+        <div id="credits">
+          <div id="credit-info">
+            <div class="credit-row">
+              <p class="credit-head">Company</p>
+              <p class="credit-data">About</p>
+              <p class="credit-data">Jobs</p>
+              <p class="credit-data">For the record</p>
+            </div>
+            <div class="credit-row">
+              <p class="credit-head">Communities</p>
+              <p class="credit-data">For Artists</p>
+              <p class="credit-data">Developers</p>
+              <p class="credit-data">Advertising</p>
+              <p class="credit-data">Investors</p>
+              <p class="credit-data">Vendors</p>
+            </div>
+            <div class="credit-row">
+              <p class="credit-head">Useful links</p>
+              <p class="credit-data">Support</p>
+              <p class="credit-data">Free Mobile App</p>
+            </div>
+          </div>
+          <div id="social-media">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+        </div>
+
+        <!-- Separator -->
+        <div id="line"></div>
+
+        <!-- Footer -->
+        <div id="footer">
+          <div id="footer-options">
+            <span>Legal</span>
+            <span>Privacy center</span>
+            <span>Privacy Policy</span>
+            <span>Cookies</span>
+            <span>About Ads</span>
+            <span>Accessibility</span>
+          </div>
+          <div id="copyright">&copy; 2023 Spotify AB</div>
+        </div>
+      </div>
+
+      <!-- Music player -->
+      <div id="music-player">
+        <!-- Current music album -->
+        <div id="album">
+          <img
+            src="./Project/Homework Assets/album_picture.jpeg"
+            alt="song thumbnail"
+          />
+          <div id="song-info">
+            <p id="song-name">Daylight</p>
+            <div id="song-singer">David Kishor</div>
+          </div>
+          <img src="./Project/Homework Assets/album_icon1.png" />
+          <img
+            src="./Project/Homework Assets/album_icon2.png"
+            style="height: 2.3rem"
+          />
+        </div>
+
+        <!-- Player -->
+        <div id="player">
+          <div id="player-controls">
+            <img src="./Project/assets/player_icon1.png" class="player-icon" />
+            <img src="./Project/assets/player_icon2.png" class="player-icon" />
+            <img
+              src="./Project/assets/player_icon3.png"
+              class="player-icon play-btn"
+            />
+            <img src="./Project/assets/player_icon4.png" class="player-icon" />
+            <img src="./Project/assets/player_icon5.png" class="player-icon" />
+          </div>
+          <div id="playback-bar">
+            <span class="curr-time">00:00</span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="0"
+              step="1"
+              id="progress-bar"
+              style="margin: 0 0.5rem"
+            />
+            <span class="tot-time">03:25</span>
+          </div>
+        </div>
+
+        <!-- Music controls -->
+        <div id="controls">
+          <img
+            src="./Project/Homework Assets/controls_icon1.png"
+            class="control-icon sound-icon"
+          />
+          <img
+            src="./Project/Homework Assets/controls_icon3.png"
+            class="control-icon"
+          />
+          <img
+            src="./Project/Homework Assets/controls_icon4.png"
+            class="control-icon"
+          />
+          <img
+            src="./Project/Homework Assets/controls_icon5.png"
+            class="control-icon sound-icon"
+          />
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            step="1"
+            id="sound-control"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
